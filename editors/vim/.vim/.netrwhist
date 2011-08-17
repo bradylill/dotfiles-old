@@ -1,0 +1,6 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =4
+let g:netrw_dirhist_1='/Users/bradylill/Code/sandbox/cloj_test/src'
+let g:netrw_dirhist_2='/Users/bradylill/Code/sandbox/cloj_test'
+let g:netrw_dirhist_3='/Users/bradylill/Code/sandbox/cloj_test/src'
+let g:netrw_dirhist_4='/Users/bradylill/Code/sandbox/cloj_test/src/cloj_test'

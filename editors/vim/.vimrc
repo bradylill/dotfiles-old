@@ -20,4 +20,4 @@ let mapleader = ","
 map <F2> :NERDTreeToggle<CR>
 let NERDTreeChDirMode=2
 
-set smartindent tabstop=4 shiftwidth=4 expandtab
+set smartindent tabstop=2 shiftwidth=2 expandtab

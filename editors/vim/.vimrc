@@ -18,6 +18,7 @@ colorscheme solarized
 let mapleader = ","
 
 map <F2> :NERDTreeToggle<CR>
+map <F3> :noh<CR>
 let NERDTreeChDirMode=2
 
 set smartindent tabstop=2 shiftwidth=2 expandtab

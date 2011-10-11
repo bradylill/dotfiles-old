@@ -5,8 +5,10 @@ filetype plugin indent on
 setlocal spell spelllang=en_ca
 
 set hlsearch
+set incsearch
 set number
 set undolevels=3000
+set cindent
 
 set background=dark
 let g:solarized_termtrans=1

@@ -23,4 +23,7 @@ map <F2> :NERDTreeToggle<CR>
 map <F3> :noh<CR>
 let NERDTreeChDirMode=2
 
+map <C-f>b :FufBuffer<CR>
+map <C-f>f :FufFile<CR>
+
 set smartindent tabstop=2 shiftwidth=2 expandtab

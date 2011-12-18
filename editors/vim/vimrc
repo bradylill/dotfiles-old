@@ -8,11 +8,8 @@ setlocal spell spelllang=en_ca
 set hlsearch
 set incsearch
 
-set number
 set undolevels=3000
 set cindent
-
-set mouse=ni
 
 set nowrap
 set smartindent tabstop=2 shiftwidth=2 expandtab
@@ -26,10 +23,11 @@ let g:solarized_termtrans=1
 let g:solarized_termcolors=256
 let g:solarized_contract="high"
 let g:solarized_visibility="high"
-colorscheme solarized 
+"colorscheme solarized 
+colorscheme molokai 
 
 "Key mappin
-let mapleader = ","
+let mapleader = "\\"
 
 map <F2> :NERDTreeToggle<CR>
 map <F3> :noh<CR>
@@ -37,3 +35,6 @@ let NERDTreeChDirMode=2
 
 map <C-f><C-b> :FufBuffer<CR>
 map <C-f><C-f> :FufFile<CR>
+
+map <C-n> :set number<CR>
+map <C-n><C-n> :set nonumber<CR>

@@ -9,5 +9,5 @@ PROMPT='
 %~
 ${smiley}  %{$reset_color%}'
 
-RPROMPT='%{$fg[white]%} $(date "+%H:%M:%S")%{$reset_color%}'
+RPROMPT='$(current_branch)%{$fg[white]%} $(date "+%H:%M:%S")%{$reset_color%}'
 

@@ -1,4 +1,5 @@
 call pathogen#infect()
+call pathogen#helptags()
 syntax on
 filetype plugin indent on
 
@@ -17,17 +18,18 @@ set smartindent tabstop=2 shiftwidth=2 expandtab
 set wildmode=list:full,list:longest
 set wildignore+=*.o,*.obj,.git,*.rbc,*.class,.svn,vendor/gems/*
 
+set showcmd
+
 "Stylin
 set background=dark
 let g:solarized_termtrans=1
 let g:solarized_termcolors=256
 let g:solarized_contract="high"
 let g:solarized_visibility="high"
-"colorscheme solarized 
-colorscheme molokai 
+colorscheme solarized 
 
 "Key mappin
-let mapleader = "\\"
+let mapleader = ","
 
 map <F2> :NERDTreeToggle<CR>
 map <F3> :noh<CR>

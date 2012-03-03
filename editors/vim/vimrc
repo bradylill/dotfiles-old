@@ -20,6 +20,9 @@ set wildignore+=*.o,*.obj,.git,*.rbc,*.class,.svn,vendor/gems/*
 
 set showcmd
 
+"Clojure
+let vimclojure#WantNailgun=1
+
 "Stylin
 set background=dark
 let g:solarized_termtrans=1

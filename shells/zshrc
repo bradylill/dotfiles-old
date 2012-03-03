@@ -1,5 +1,6 @@
-alias emacs="/usr/local/Cellar/emacs/HEAD/Emacs.app/Contents/MacOS/Emacs -nw"
-alias pwdc="pwd | pbcopy"
+export SHELL_HOME=~/dotfiles/shells
+
+source "$SHELL_HOME/alias"
 
 export PATH=~/bin:/usr/local/bin:$PATH
 

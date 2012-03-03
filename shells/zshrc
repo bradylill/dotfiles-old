@@ -1,8 +1,6 @@
 export SHELL_HOME=~/dotfiles/shells
-
 source "$SHELL_HOME/alias"
-
-export PATH=~/bin:/usr/local/bin:$PATH
+source "$SHELL_HOME/env"
 
 autoload -U colors
 colors
@@ -15,4 +13,3 @@ ${smiley}  %{$reset_color%}'
 
 RPROMPT='%{$fg[white]%} $(date "+%H:%M:%S")%{$reset_color%}'
 
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"

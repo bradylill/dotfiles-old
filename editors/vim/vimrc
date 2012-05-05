@@ -6,6 +6,8 @@ filetype plugin indent on
 "I cant spel
 setlocal spell spelllang=en_ca
 
+set number
+
 set hlsearch
 set incsearch
 
@@ -16,16 +18,23 @@ set nowrap
 set smartindent tabstop=2 shiftwidth=2 expandtab
 
 set wildmode=list:full,list:longest
-set wildignore+=*.o,*.obj,.git,*.rbc,*.class,.svn,vendor/gems/*
+set wildignore+=*.swp,*.o,*.obj,.git,*.rbc,*.class,.svn,vendor/gems/*
+
+let g:ctrlp_custom_ignore = '\.git$\|\.hg$\|\.svn$'
 
 set showcmd
 
 "Clojure
+let vimclojure#HighlightBuiltins=1
+let vimclojure#DynamicHighlighting=1
+let vimclojure#ParenRainbow=1
 let vimclojure#WantNailgun=1
 
+
+
 "Stylin
-set background=dark
-let g:solarized_termtrans=1
+set background=light
+"let g:solarized_termtrans=1
 let g:solarized_termcolors=256
 let g:solarized_contract="high"
 let g:solarized_visibility="high"
@@ -33,6 +42,7 @@ colorscheme solarized
 
 "Key mappin
 let mapleader = ","
+let maplocalleader = "."
 
 map <F2> :NERDTreeToggle<CR>
 map <F3> :noh<CR>
@@ -40,6 +50,3 @@ let NERDTreeChDirMode=2
 
 map <C-f><C-b> :FufBuffer<CR>
 map <C-f><C-f> :FufFile<CR>
-
-map <C-n> :set number<CR>
-map <C-n><C-n> :set nonumber<CR>

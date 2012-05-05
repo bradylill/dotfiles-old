@@ -7,3 +7,5 @@ alias gpush="git push"
 
 alias ll="ls -l"
 alias l="ls -la"
+
+alias t="todo.sh"

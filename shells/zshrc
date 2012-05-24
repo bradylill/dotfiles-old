@@ -3,26 +3,9 @@ source "$SHELL_HOME/alias"
 source "$SHELL_HOME/env"
 #source "$SHELL_HOME/zsh/light-weight.zsh"
 source "$SHELL_HOME/zsh/oh-my.zsh"
-
-todo(){
-  if $(which todo.sh &> /dev/null)
-  then
-    num=$(echo $(todo.sh ls +next | wc -l))
-    let todos=num-2
-    if [ $todos != 0 ]
-    then
-      echo "$todos"
-    else
-      echo ""
-    fi
-  else
-    echo ""
-  fi
-}
-
 local smiley="%(?,%{$fg[green]%}☺%{$reset_color%},%{$fg[red]%}☹%{$reset_color%})"
 PROMPT='
 %~
 ${smiley}  %{$reset_color%}'
 
-RPROMPT='$(current_branch)%{$fg[blue]%}$(todo)%{$fg[white]%} $(date "+%H:%M:%S")%{$reset_color%}'
+RPROMPT='$(current_branch)%{$fg[blue]%}%{$fg[blue]%} $(date "+%H:%M:%S")%{$reset_color%}'

@@ -1,7 +1,20 @@
-call pathogen#infect()
-call pathogen#helptags()
-syntax on
+set nocompatible
+filetype off
+
+set rtp+=~/.vim/bundle/vundle
+call vundle#rc()
+Bundle 'gmarik/vundle'
+
+Bundle 'altercation/vim-colors-solarized'
+Bundle 'tpope/vim-surround'
+Bundle 'kien/ctrlp.vim'
+Bundle 'VimClojure'
+Bundle 'puppetlabs/puppet-syntax-vim'
+
+"call pathogen#infect()
+"call pathogen#helptags()
 filetype plugin indent on
+syntax on
 
 "I cant spel
 setlocal spell spelllang=en_ca

@@ -1,2 +1,8 @@
 .netrwhist
 .DS_Store
+.swp
+VimClojure/
+ctrlp.vim/
+puppet-syntax-vim/
+vim-colors-solarized/
+vim-surround/

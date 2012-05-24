@@ -30,7 +30,8 @@ let vimclojure#DynamicHighlighting=1
 let vimclojure#ParenRainbow=1
 let vimclojure#WantNailgun=1
 
-
+"Ctrlp
+let g:ctrlp_arg_map = 1
 
 "Stylin
 set background=light

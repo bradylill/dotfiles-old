@@ -11,8 +11,6 @@ Bundle 'kien/ctrlp.vim'
 Bundle 'VimClojure'
 Bundle 'puppetlabs/puppet-syntax-vim'
 
-"call pathogen#infect()
-"call pathogen#helptags()
 filetype plugin indent on
 syntax on
 
@@ -58,9 +56,4 @@ colorscheme solarized
 let mapleader = ","
 let maplocalleader = "."
 
-map <F2> :NERDTreeToggle<CR>
 map <F3> :noh<CR>
-let NERDTreeChDirMode=2
-
-map <C-f><C-b> :FufBuffer<CR>
-map <C-f><C-f> :FufFile<CR>

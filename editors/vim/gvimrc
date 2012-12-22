@@ -1,6 +1,4 @@
-set background=dark
-
-set relativenumber
+set background=light
 
 set guioptions-=m
 set guioptions-=T
@@ -8,4 +6,5 @@ set guioptions-=lrb
 
 set nowrap
 
-set guifont=GohuFont-Medium:h14
+"set guifont=Inconsolata-Medium:h14
+set guifont=Monaco:h12
